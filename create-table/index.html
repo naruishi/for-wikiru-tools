@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wikiテーブル作成ツール</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Wikiテーブル作成ツール</h2>
+
+      <p>入力：</p>
+      <textarea
+        id="inputBox"
+        placeholder="タブ区切りやスペース区切りの行を貼り付け"
+      ></textarea>
+
+      <button onclick="convert()">変換する</button>
+
+      <p>出力：</p>
+      <textarea id="outputBox" readonly></textarea>
+
+      <script>
+        function convert() {
+          const input = document.getElementById("inputBox").value;
+
+          const lines = input.split(/\r?\n/);
+
+          const converted = lines
+            .map((line) => {
+              return line
+                .replace(/\t/g, " ") // タブ → 半角スペース
+                .replace(/　/g, " ") // 全角スペース → 半角スペース
+                .replace(/ +/g, " ") // 連続スペース → 1 個
+                .trim() // 前後のスペース除去
+                .replace(/ /g, "|") // 半角スペース → |
+                .replace(/^/, "|") // 行頭に |
+                .replace(/$/, "|"); // 行末に |
+            })
+            .join("\n");
+
+          document.getElementById("outputBox").value = converted;
+        }
+      </script>
+    </div>
+  </body>
+</html>

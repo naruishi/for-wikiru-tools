@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>txt 重複行の削除と並び替え</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>重複行を削除（順序保持 or 昇順ソート）</h2>
+      <textarea
+        id="inputBox"
+        placeholder="ここにテキストを入力してください"
+      ></textarea
+      ><br />
+
+      <label for="modeSelect">並び順:</label>
+      <select id="modeSelect">
+        <option value="preserve">順序保持</option>
+        <option value="sort">昇順ソート</option>
+      </select>
+
+      <button onclick="processLines()">実行</button>
+
+      <script>
+        function splitLines(text) {
+          return text.length === 0 ? [] : text.split(/\r?\n/);
+        }
+
+        function dedupePreserveOrder(lines) {
+          const seen = new Set();
+          return lines.filter((line) => {
+            if (seen.has(line)) return false;
+            seen.add(line);
+            return true;
+          });
+        }
+
+        function dedupeAndSort(lines) {
+          return [...new Set(lines)].sort();
+        }
+
+        function joinLines(lines) {
+          return lines.join("\n");
+        }
+
+        function processLines() {
+          const textarea = document.getElementById("inputBox");
+          const mode = document.getElementById("modeSelect").value;
+          const lines = splitLines(textarea.value);
+
+          let result = [];
+          if (mode === "preserve") {
+            result = dedupePreserveOrder(lines);
+          } else if (mode === "sort") {
+            result = dedupeAndSort(lines);
+          }
+
+          textarea.value = joinLines(result);
+        }
+      </script>
+    </div>
+  </body>
+</html>

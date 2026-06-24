@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>txt複数行を一行に変換</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>行末にカンマを付けて一行にまとめる</h1>
+
+      <label>入力テキスト：</label><br />
+      <textarea id="input"></textarea><br />
+
+      <button id="convertBtn">変換する</button>
+
+      <br /><br />
+      <label>出力テキスト：</label><br />
+      <textarea id="output" readonly></textarea>
+
+      <script>
+        const input = document.getElementById("input");
+        const output = document.getElementById("output");
+        const btn = document.getElementById("convertBtn");
+
+        btn.addEventListener("click", () => {
+          // 行ごとに分割
+          const lines = input.value.split(/\r?\n/);
+
+          // 空行を除きつつ、各行の末尾にカンマを付ける
+          const processed = lines
+            .map((line) => line.trim())
+            .filter((line) => line.length > 0)
+            .map((line) => line + ",")
+            .join(" "); // 一行にまとめる（スペース区切り）
+
+          output.value = processed;
+        });
+      </script>
+    </div>
+  </body>
+</html>

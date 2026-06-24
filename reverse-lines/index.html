@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>txt 逆順ソート表示</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>テキストを行単位で逆順にソートします</h1>
+      <p>
+        下のボックスにテキストを貼り付けて、「逆順に並べる」をクリックしてください。
+      </p>
+      <textarea
+        id="inputText"
+        placeholder="ここにテキストを貼り付けてください"
+      ></textarea
+      ><br />
+      <button onclick="reverseLines()">逆順に並べる</button>
+      <textarea id="output" placeholder=""></textarea><br />
+
+      <script>
+        function reverseLines() {
+          const input = document.getElementById("inputText").value;
+          const lines = input.split(/\r?\n/);
+          const reversed = lines.reverse().join("\n");
+          document.getElementById("output").textContent = reversed;
+        }
+      </script>
+    </div>
+  </body>
+</html>

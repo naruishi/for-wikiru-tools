@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>wikiru 文字列だけのユニットページリンクにToolTipを追加</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>wikiru 文字列だけのユニットページリンクにToolTipを追加</h1>
+      <p>
+        [[]]で囲まれたテキストをTooltipで置換します。マウスオーバーするとアイコンとリンクが表示されます。
+        アイコン画像がwikiにアップロードされているのに、キャラクター名だけが書かれているようなよくある記事に適用できます。
+        記事にアイコンを挿入するのと違いレイアウトを崩しません。
+      </p>
+
+      <h2>入力</h2>
+      <textarea
+        id="inputBox"
+        placeholder="[[文字列]] の形式で入力してください"
+      ></textarea>
+      <button onclick="replaceText()">変換</button>
+      <h2>出力</h2>
+      <textarea id="outputBox" readonly></textarea>
+
+      <script>
+        function replaceText() {
+          const input = document.getElementById("inputBox").value;
+
+          // [[文字列]] を検出して置換
+          const output = input.replace(/\[\[([^\]]+?)\]\]/g, (_, text) => {
+            return `&tooltip(${text},color=blue){&ref(img/${text}_icon.png,80x80);};`;
+            //
+          });
+
+          document.getElementById("outputBox").value = output;
+        }
+      </script>
+    </div>
+  </body>
+</html>

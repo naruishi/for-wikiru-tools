@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>wikiru 表列抽出ツール</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>wikiru.jp 表列抽出ツール</h2>
+
+      <div>
+        <p><strong>入力ボックス（記事ソース）</strong></p>
+        <textarea
+          id="input"
+          rows="15"
+          cols="100"
+          placeholder="ここにwikiruの表ソースを貼り付けてください"
+        ></textarea>
+      </div>
+
+      <div style="margin-top: 8px">
+        <label>
+          n番目の「|」:
+          <input id="nIndex" type="number" value="1" min="1" />
+        </label>
+        <label style="margin-left: 8px">
+          m番目の「|」:
+          <input id="mIndex" type="number" value="2" min="1" />
+        </label>
+        <button onclick="run()">変換</button>
+      </div>
+
+      <div style="margin-top: 8px">
+        <p><strong>出力ボックス</strong></p>
+        <textarea id="output" rows="15" cols="100" readonly></textarea>
+      </div>
+
+      <script>
+        function run() {
+          const src = document.getElementById("input").value;
+          const n = parseInt(document.getElementById("nIndex").value, 10);
+          const m = parseInt(document.getElementById("mIndex").value, 10);
+          const outLines = [];
+
+          if (
+            !Number.isInteger(n) ||
+            !Number.isInteger(m) ||
+            n < 1 ||
+            m < 1 ||
+            n > m
+          ) {
+            alert(
+              "n, m は 1以上の整数で、n ≤ m になるように指定してください。",
+            );
+            return;
+          }
+
+          const lines = src.split("\n");
+
+          for (const line of lines) {
+            const trimmed = line.trim();
+
+            // 行頭が "|" で始まるか
+            if (!trimmed.startsWith("|")) continue;
+
+            // 行末が h / c / f の場合は除外
+            if (/[hcf]$/.test(trimmed)) continue;
+
+            // "|" の位置を n番目〜m番目で扱うため、split で列を取得
+            const parts = trimmed.split("|"); // 先頭の "|" の前は空文字になる
+            const pipeCount = parts.length - 1; // "|" の数
+
+            if (pipeCount < m) continue; // m番目の "|" が存在しない行はスキップ
+
+            // n番目〜m番目の "|" の間にあるテキストは parts[n]〜parts[m-1]
+            const extracted = parts.slice(n, m).join("|").trim();
+
+            if (extracted !== "") {
+              outLines.push(`#clipboard(source){{\n|${extracted}|\n}}`);
+            }
+          }
+
+          document.getElementById("output").value = outLines.join("\n");
+        }
+      </script>
+    </div>
+  </body>
+</html>

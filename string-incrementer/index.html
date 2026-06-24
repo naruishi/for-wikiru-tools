@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字列数値インクリメンター</title>
+    <link rel="stylesheet" href="../css/green.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>文字列数値インクリメンター</h1>
+
+      <div class="form-group">
+        <label for="inputText">入力文字列（数値を含む）</label>
+        <input
+          type="text"
+          id="inputText"
+          placeholder="例: 第1回"
+          value="第1回"
+        />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="increment">インクリメント値</label>
+          <input type="number" id="increment" value="1" min="1" max="1000" />
+        </div>
+
+        <div class="form-group">
+          <label for="count">出力個数</label>
+          <input type="number" id="count" value="41" min="1" max="10000" />
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="newline" />
+        <label for="newline"
+          >改行を挿入（チェック時は改行、未チェック時はカンマ区切り）</label
+        >
+      </div>
+
+      <div class="button-group">
+        <button class="btn-primary" onclick="generate()">生成</button>
+        <button class="btn-secondary" onclick="reset()">リセット</button>
+      </div>
+
+      <div class="output-section">
+        <div class="form-group">
+          <label for="output">出力</label>
+          <textarea
+            id="output"
+            placeholder="生成された文字列がここに表示されます"
+            readonly
+          ></textarea>
+        </div>
+        <button class="btn-secondary copy-button" onclick="copyToClipboard()">
+          出力をコピー
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function generate() {
+        const input = document.getElementById("inputText").value;
+        const increment =
+          parseInt(document.getElementById("increment").value) || 1;
+        const count = parseInt(document.getElementById("count").value) || 1;
+        const useNewline = document.getElementById("newline").checked;
+        const separator = useNewline ? "\n" : ", ";
+
+        // 数値を抽出して、最初の数値の位置と値を特定
+        const numberRegex = /\d+/;
+        const match = input.match(numberRegex);
+
+        if (!match) {
+          document.getElementById("output").value =
+            "エラー: 入力文字列に数値が含まれていません";
+          return;
+        }
+
+        const firstNumber = parseInt(match[0]);
+        const numberIndex = input.indexOf(match[0]);
+        const beforeNumber = input.substring(0, numberIndex);
+        const afterNumber = input.substring(numberIndex + match[0].length);
+
+        // 結果を生成
+        const results = [];
+        for (let i = 0; i < count; i++) {
+          const currentNumber = firstNumber + i * increment;
+          results.push(beforeNumber + currentNumber + afterNumber);
+        }
+
+        document.getElementById("output").value = results.join(separator);
+      }
+
+      function copyToClipboard() {
+        const output = document.getElementById("output");
+        if (output.value.trim() === "") {
+          alert("コピーする内容がありません");
+          return;
+        }
+        navigator.clipboard
+          .writeText(output.value)
+          .then(() => {
+            alert("コピーしました");
+          })
+          .catch(() => {
+            alert("コピーに失敗しました");
+          });
+      }
+
+      function reset() {
+        document.getElementById("inputText").value = "第1国";
+        document.getElementById("increment").value = 1;
+        document.getElementById("count").value = 41;
+        document.getElementById("newline").checked = false;
+        document.getElementById("output").value = "";
+      }
+
+      // Enterキーで生成
+      document.getElementById("inputText").addEventListener("keypress", (e) => {
+        if (e.key === "Enter") generate();
+      });
+      document.getElementById("increment").addEventListener("keypress", (e) => {
+        if (e.key === "Enter") generate();
+      });
+      document.getElementById("count").addEventListener("keypress", (e) => {
+        if (e.key === "Enter") generate();
+      });
+
+      // 初期生成
+      generate();
+    </script>
+  </body>
+</html>

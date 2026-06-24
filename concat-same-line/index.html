@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>txt行単位連結ツール</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>テキスト行単位連結ツール</h1>
+
+      <div class="row">
+        <div class="col">
+          <label for="left">左テキスト（行ごと）</label><br />
+          <textarea
+            id="left"
+            placeholder="例：&#10;A1&#10;A2&#10;A3"
+          ></textarea>
+        </div>
+        <div class="col">
+          <label for="right">右テキスト（行ごと）</label><br />
+          <textarea
+            id="right"
+            placeholder="例：&#10;B1&#10;B2&#10;B3"
+          ></textarea>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 8px">
+        区切り文字:
+        <input id="separator" type="text" value="" style="width: 80px" />
+        <button id="concatBtn">行を連結</button>
+      </div>
+
+      <div>
+        <label for="output">出力</label><br />
+        <textarea id="output" readonly></textarea>
+      </div>
+
+      <script>
+        function concatLines() {
+          const left = document.getElementById("left").value.split(/\r?\n/);
+          const right = document.getElementById("right").value.split(/\r?\n/);
+          const sep = document.getElementById("separator").value ?? "";
+
+          const maxLen = Math.max(left.length, right.length);
+          const result = [];
+
+          for (let i = 0; i < maxLen; i++) {
+            const l = left[i] ?? "";
+            const r = right[i] ?? "";
+            // どちらかが空でもそのまま連結（必要なら条件変えてOK）
+            result.push(l + sep + r);
+          }
+
+          document.getElementById("output").value = result.join("\n");
+        }
+
+        document
+          .getElementById("concatBtn")
+          .addEventListener("click", concatLines);
+      </script>
+    </div>
+  </body>
+</html>

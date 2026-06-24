@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>txt 重複行削除ツール</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>重複行を削除（空行は維持）</h2>
+      <textarea
+        id="input"
+        placeholder="ここにテキストを入力してください..."
+      ></textarea>
+      <button onclick="processText()">変換して出力</button>
+      <textarea
+        id="output"
+        placeholder="出力結果がここに表示されます..."
+      ></textarea>
+      <button onclick="copyToClipboard()">クリップボードにコピー</button>
+
+      <script>
+        function processText() {
+          const input = document.getElementById("input").value;
+          const lines = input.split("\n");
+          const seen = new Set();
+          const result = lines
+            .map((line) => {
+              if (line.trim() === "") return ""; // 空行はそのまま
+              if (seen.has(line)) return null; // 重複行は削除
+              seen.add(line);
+              return line;
+            })
+            .filter((line) => line !== null);
+          document.getElementById("output").value = result.join("\n");
+        }
+
+        function copyToClipboard() {
+          const output = document.getElementById("output");
+          output.select();
+          document.execCommand("copy");
+          alert("クリップボードにコピーしました！");
+        }
+      </script>
+    </div>
+  </body>
+</html>
