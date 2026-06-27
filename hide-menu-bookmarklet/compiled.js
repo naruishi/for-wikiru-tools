@@ -1,0 +1,1 @@
+javascript:(function(){(function(){var b=document.querySelector("td.menubar"),a=document.querySelector('td[valign="top"]');b&&a&&(b.style.display==="none"?(b.style.display="",a.style.width="",a.removeAttribute("colspan")):(b.style.display="none",a.style.width="100%",a.setAttribute("colspan","2")))})();})();
