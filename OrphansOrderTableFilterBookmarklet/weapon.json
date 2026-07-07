@@ -158,27 +158,27 @@
       "buttons": [
         {
           "buttonName": "0",
-          "regexStr": "0",
+          "regexStr": "^0",
           "exceptStr": ""
         },
         {
           "buttonName": "1-5",
-          "regexStr": "^[1-5]$",
+          "regexStr": "^[1-5](?!\\d)",
           "exceptStr": ""
         },
         {
           "buttonName": "6-9",
-          "regexStr": "^[6-9]$",
+          "regexStr": "^[6-9]",
           "exceptStr": ""
         },
         {
           "buttonName": "10-14",
-          "regexStr": "1[0-5]",
+          "regexStr": "^1[0-4]",
           "exceptStr": ""
         },
         {
           "buttonName": "15-19",
-          "regexStr": "1[5-9]",
+          "regexStr": "^1[5-9]",
           "exceptStr": ""
         }
       ]
@@ -219,7 +219,7 @@
         }
       ]
     },
-    "攻撃対象": {
+    "メイン": {
       "columnsStr": "7",
       "logic": "AND",
       "buttons": [
@@ -268,10 +268,150 @@
           "buttonName": "4回",
           "regexStr": "(\\d-)?4回",
           "exceptStr": ""
+        },
+        {
+          "buttonName": "1-99%",
+          "regexStr": "M?ATK(\\d\\d|\\d)%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "100-199%",
+          "regexStr": "M?ATK(1\\d\\d)%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "200-299%",
+          "regexStr": "M?ATK(2\\d\\d)%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "300-999%",
+          "regexStr": "M?ATK([3-9]\\d\\d)%",
+          "exceptStr": ""
         }
       ]
     },
-
+    "区分": {
+      "columnsStr": "9",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "SSR",
+          "regexStr": "SSR",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SR",
+          "regexStr": "[^S]SR",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "R",
+          "regexStr": "[^ST]R",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "N",
+          "regexStr": "N",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ストーリー",
+          "regexStr": "ストーリー",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レイド",
+          "regexStr": "レイド",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "外伝",
+          "regexStr": "外伝",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "イベント",
+          "regexStr": "イベント",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "黒騎士",
+          "regexStr": "黒騎士",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "開闢",
+          "regexStr": "開闢",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "重騎士",
+          "regexStr": "重騎士",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "旧神",
+          "regexStr": "旧神",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "幻想集会",
+          "regexStr": "幻想集会",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "寝室",
+          "regexStr": "寝室",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "天使",
+          "regexStr": "天使",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "メルヒェン",
+          "regexStr": "メルヒェン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "コラボ",
+          "regexStr": "コラボ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ミッション",
+          "regexStr": "ミッション",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "チャレンジ",
+          "regexStr": "チャレンジ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "サーガ",
+          "regexStr": "サーガ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ギルド",
+          "regexStr": "ギルド",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ULTRA",
+          "regexStr": "ULTRA",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "HELL",
+          "regexStr": "HELL",
+          "exceptStr": ""
+        }
+      ]
+    },
     "要約": {
       "columnsStr": "0",
       "logic": "AND",
@@ -348,7 +488,6 @@
         }
       ]
     },
-
     "テンプレ": {
       "columnsStr": "0",
       "logic": "OR",
@@ -367,6 +506,6 @@
     }
   },
   "globalLogic": "AND",
-  "stickyEnabled": true,
+  "stickyEnabled": false,
   "minimized": false
 }
