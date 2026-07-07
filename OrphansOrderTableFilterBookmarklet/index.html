@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ミナシゴノシゴトWiki テーブルフィルターブックマークレット</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ミナシゴノシゴトWiki テーブルフィルターブックマークレット</h1>
+      <p class="subtitle">
+        ミナシゴノシゴトWikiのキャラ性能比較/戦神性能比較/武器早見表のページにフィルターを設置します。
+      </p>
+
+      <div class="instructions">
+        <h3>📋 使い方</h3>
+        <ol>
+          <li>下のボタンをドラッグしてブックマークバーにドロップ</li>
+          <li>
+            または、ページのブックマークを作成して、URLを下のコードに置き換える
+          </li>
+          <li>フィルタリング機能が必要なページで、ブックマークをクリック</li>
+        </ol>
+      </div>
+
+      <div id="method1">
+        <div class="method-title">方法1: ドラッグ＆ドロップ</div>
+        <a
+          id="bookmarkLink"
+          class="bookmark-link"
+          href="javascript:void(0);"
+          draggable="true"
+        >
+          ミナシゴフィルター
+        </a>
+        <p style="color: #999; font-size: 12px">
+          このボタンをブックマークバーにドラッグしてください
+        </p>
+      </div>
+
+      <div id="method2">
+        <div class="method-title">方法2: コピー＆ペースト</div>
+        <div class="copy-section">
+          <p style="margin-bottom: 10px; color: #666; font-size: 14px">
+            ブックマークレットのコードをコピー:
+          </p>
+          <div class="code-box" id="codeBox">
+            <span class="loading">読み込み中...</span>
+          </div>
+          <button class="copy-button" id="copyButton" style="display: none">
+            コードをコピー
+          </button>
+        </div>
+        <p style="color: #666; font-size: 12px; line-height: 1.6">
+          ✓ 新しいブックマークを作成します<br />
+          ✓ 名前を設定します<br />
+          ✓ URLの欄に上のコードをペーストします<br />
+          ✓ 保存して完了です
+        </p>
+      </div>
+
+      <div class="json-section" style="margin-top: 24px">
+        <h3>📄 JSON 設定</h3>
+        <p style="color: #666; font-size: 14px; margin-bottom: 12px">
+          以下の JSON
+          をコピーし、該当ページでブックマークレットを起動したら、Importボタンを押します。
+        </p>
+
+        <div style="margin-bottom: 16px">
+          <label
+            for="minasihgoJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >キャラ性能比較用GUI設定</label
+          >
+          <textarea
+            id="minasihgoJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="minasihgoJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+
+        <div style="margin-bottom: 16px">
+          <label
+            for="shenshinJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >戦神性能比較用GUI設定</label
+          >
+          <textarea
+            id="shenshinJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="shenshinJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+
+        <div>
+          <label
+            for="weaponJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >武器早見表用GUI設定</label
+          >
+          <textarea
+            id="weaponJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="weaponJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+      </div>
+
+      <div id="successMessage" class="success">✓ コードをコピーしました！</div>
+
+      <div id="errorMessage" class="error" style="display: none">
+        ⚠ ブックマークレットの読み込みに失敗しました
+      </div>
+    </div>
+    <script>
+      async function copyText(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (error) {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textArea);
+          return true;
+        }
+      }
+
+      // compiled.js の内容を読み込んでブックマークレットを作成
+      async function initBookmarklet() {
+        try {
+          const response = await fetch("./index.global.js");
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const bookmarkletCode = await response.text();
+
+          // ブックマークレット用のHREFを設定
+          const bookmarkLink = document.getElementById("bookmarkLink");
+          bookmarkLink.href = bookmarkletCode;
+
+          // コードボックスに表示
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = bookmarkletCode;
+
+          // コピーボタンを表示
+          const copyButton = document.getElementById("copyButton");
+          copyButton.style.display = "block";
+
+          // コピーボタンの機能
+          copyButton.addEventListener("click", async function () {
+            await copyText(bookmarkletCode);
+            const successMsg = document.getElementById("successMessage");
+            successMsg.style.display = "block";
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 3000);
+          });
+        } catch (error) {
+          console.error("Failed to load bookmarklet:", error);
+          const errorMsg = document.getElementById("errorMessage");
+          errorMsg.style.display = "block";
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = "エラー: compiled.js を読み込めませんでした";
+        }
+      }
+
+      async function initJsonTexts() {
+        const jsonEntries = [
+          { id: "minasihgoJsonText", path: "./minasihgo.json" },
+          { id: "shenshinJsonText", path: "./shenshin.json" },
+          { id: "weaponJsonText", path: "./weapon.json" },
+        ];
+
+        for (const entry of jsonEntries) {
+          const textArea = document.getElementById(entry.id);
+          try {
+            const response = await fetch(entry.path);
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            textArea.value = await response.text();
+          } catch (error) {
+            textArea.value = `読み込みに失敗しました: ${error.message}`;
+          }
+        }
+      }
+
+      function initCopyButtons() {
+        document.querySelectorAll("[data-copy-target]").forEach((button) => {
+          button.addEventListener("click", async function () {
+            const targetId = this.getAttribute("data-copy-target");
+            const textArea = document.getElementById(targetId);
+            await copyText(textArea.value);
+            const successMsg = document.getElementById("successMessage");
+            successMsg.textContent = "✓ JSON をコピーしました！";
+            successMsg.style.display = "block";
+            setTimeout(() => {
+              successMsg.textContent = "✓ コードをコピーしました！";
+              successMsg.style.display = "none";
+            }, 3000);
+          });
+        });
+      }
+
+      // ページ読み込み時に実行
+      document.addEventListener("DOMContentLoaded", async function () {
+        await initBookmarklet();
+        await initJsonTexts();
+        initCopyButtons();
+      });
+
+      // ドラッグアイコン表示用
+      document
+        .getElementById("bookmarkLink")
+        .addEventListener("dragstart", function (e) {
+          e.dataTransfer.effectAllowed = "copy";
+        });
+    </script>
+  </body>
+</html>

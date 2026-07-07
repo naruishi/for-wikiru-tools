@@ -1,0 +1,372 @@
+{
+  "groups": {
+    "属性": {
+      "columnsStr": "1",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "火",
+          "regexStr": "F8C7C7",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "水",
+          "regexStr": "BFD6F6",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "風",
+          "regexStr": "CDEFC0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "雷",
+          "regexStr": "ffff7f",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "光",
+          "regexStr": "FBFAE7",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "闇",
+          "regexStr": "E5C0F4",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暁",
+          "regexStr": "E5A7BD",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "月虹",
+          "regexStr": "C9CFE0",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "武器種": {
+      "columnsStr": "2",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "長剣",
+          "regexStr": "長剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "斧槌",
+          "regexStr": "斧槌",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "短剣",
+          "regexStr": "短剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武具",
+          "regexStr": "武具",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "槍",
+          "regexStr": "槍",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "杖",
+          "regexStr": "杖",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "弓",
+          "regexStr": "弓",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "銃",
+          "regexStr": "銃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "宝器",
+          "regexStr": "宝器",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "物魔": {
+      "columnsStr": "3",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "物理",
+          "regexStr": "物",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "魔法",
+          "regexStr": "魔",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "物魔",
+          "regexStr": "物\\n魔",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "弾数": {
+      "columnsStr": "4",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "1回",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2回",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3回",
+          "regexStr": "3",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "4回",
+          "regexStr": "4",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "5回",
+          "regexStr": "5",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "コンボ": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1-5",
+          "regexStr": "^[1-5]$",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "6-9",
+          "regexStr": "^[6-9]$",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "10-14",
+          "regexStr": "1[0-5]",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "15-19",
+          "regexStr": "1[5-9]",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "BG": {
+      "columnsStr": "6",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "10",
+          "regexStr": "1[0-9]",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "20",
+          "regexStr": "2\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "30",
+          "regexStr": "3\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "40",
+          "regexStr": "4\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "50",
+          "regexStr": "5\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "100",
+          "regexStr": "100",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "攻撃対象": {
+      "columnsStr": "7",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "単体",
+          "regexStr": "(遠|近|中)単",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体",
+          "regexStr": "(遠|近|中)全",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "縦列",
+          "regexStr": "(遠|近|中)縦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "横列",
+          "regexStr": "(遠|近|中)横",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "十字",
+          "regexStr": "(遠|近|中)十",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "1回",
+          "regexStr": "1回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2回",
+          "regexStr": "(1-)?2回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3回",
+          "regexStr": "(\\d-)?3回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "4回",
+          "regexStr": "(\\d-)?4回",
+          "exceptStr": ""
+        }
+      ]
+    },
+
+    "要約": {
+      "columnsStr": "0",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "CRT",
+          "regexStr": "CRT(?!ダメ)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "CRTなし",
+          "regexStr": "",
+          "exceptStr": "CRT(?!ダメ)"
+        },
+        {
+          "buttonName": "上限or追撃",
+          "regexStr": "(上限[^+]|追撃)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "上限or追撃なし",
+          "regexStr": "",
+          "exceptStr": "(上限[^+]|追撃)"
+        },
+        {
+          "buttonName": "デバフ",
+          "regexStr": "thistle",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "デバフなし",
+          "regexStr": "",
+          "exceptStr": "thistle"
+        },
+        {
+          "buttonName": "HP回復",
+          "regexStr": "(HP(継続)?回復|吸魂)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "HP回復なし",
+          "regexStr": "",
+          "exceptStr": "(HP(継続)?回復|吸魂)"
+        },
+        {
+          "buttonName": "武器回数増加",
+          "regexStr": "武器回数(回復|保護)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "強化解除",
+          "regexStr": "強化解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体解除",
+          "regexStr": "弱体解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体無効",
+          "regexStr": "弱体無効",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回避",
+          "regexStr": "回避[^率]",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "パワーゲージ",
+          "regexStr": "パワーゲージ",
+          "exceptStr": ""
+        }
+      ]
+    },
+
+    "テンプレ": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "空行削除",
+          "regexStr": "",
+          "exceptStr": "^$"
+        },
+        {
+          "buttonName": "Button",
+          "regexStr": "",
+          "exceptStr": ""
+        }
+      ]
+    }
+  },
+  "globalLogic": "AND",
+  "stickyEnabled": true,
+  "minimized": false
+}

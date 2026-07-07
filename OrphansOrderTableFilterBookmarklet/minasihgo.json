@@ -1,0 +1,784 @@
+{
+  "groups": {
+    "属性": {
+      "columnsStr": "1",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "火",
+          "regexStr": "F8C7C7",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "水",
+          "regexStr": "BFD6F6",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "風",
+          "regexStr": "CDEFC0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "雷",
+          "regexStr": "ffff7f",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "光",
+          "regexStr": "FBFAE7",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "闇",
+          "regexStr": "E5C0F4",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暁",
+          "regexStr": "E5A7BD",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "月虹",
+          "regexStr": "C9CFE0",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "限凸": {
+      "columnsStr": "1",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "4凸",
+          "regexStr": "",
+          "exceptStr": "(5凸|戦神継承|伝承深禍)"
+        },
+        {
+          "buttonName": "5凸",
+          "regexStr": "5凸",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "戦神継承",
+          "regexStr": "戦神継承",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "伝承深禍",
+          "regexStr": "伝承深禍",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "武器1": {
+      "columnsStr": "2",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "長剣",
+          "regexStr": "長剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "斧槌",
+          "regexStr": "斧槌",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "短剣",
+          "regexStr": "短剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武具",
+          "regexStr": "武具",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "槍",
+          "regexStr": "槍",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "杖",
+          "regexStr": "杖",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "弓",
+          "regexStr": "弓",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "銃",
+          "regexStr": "銃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "宝器",
+          "regexStr": "宝器",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全",
+          "regexStr": "全",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "武器2": {
+      "columnsStr": "3",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "長剣",
+          "regexStr": "長剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "斧槌",
+          "regexStr": "斧槌",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "短剣",
+          "regexStr": "短剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武具",
+          "regexStr": "武具",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "槍",
+          "regexStr": "槍",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "杖",
+          "regexStr": "杖",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "弓",
+          "regexStr": "弓",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "銃",
+          "regexStr": "銃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "宝器",
+          "regexStr": "宝器",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全",
+          "regexStr": "全",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "物魔": {
+      "columnsStr": "4",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "物理",
+          "regexStr": "物",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "魔法",
+          "regexStr": "魔",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "年": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "2021",
+          "regexStr": "2021",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2022",
+          "regexStr": "2022",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2023",
+          "regexStr": "2023",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2024",
+          "regexStr": "2024",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2025",
+          "regexStr": "2025",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2026",
+          "regexStr": "2026",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "月": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "01",
+          "regexStr": "/01",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "02",
+          "regexStr": "/02",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "03",
+          "regexStr": "/03",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "04",
+          "regexStr": "/04",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "05",
+          "regexStr": "/05",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "06",
+          "regexStr": "/06",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "07",
+          "regexStr": "/07",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "08",
+          "regexStr": "/08",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "09",
+          "regexStr": "/09",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "10",
+          "regexStr": "/10",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "11",
+          "regexStr": "/11",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "12",
+          "regexStr": "/12",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "入手": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "配布",
+          "regexStr": "配布",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ギルド",
+          "regexStr": "ギルド",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "旧神",
+          "regexStr": "旧神",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "プラチナ",
+          "regexStr": "プラチナ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ストーリー",
+          "regexStr": "ストーリー",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "期間限定",
+          "regexStr": "期間限定",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "限定外伝",
+          "regexStr": "限定外伝",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "幻想集会",
+          "regexStr": "幻想集会",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アニバ",
+          "regexStr": "アニバ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "栄光の天使",
+          "regexStr": "栄光の天使",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "深淵の天使",
+          "regexStr": "深淵の天使",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "四波羅蜜",
+          "regexStr": "四波羅蜜",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "六波羅蜜",
+          "regexStr": "六波羅蜜",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "旧支配者",
+          "regexStr": "旧支配者",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "10恋",
+          "regexStr": "10恋",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "11eyes",
+          "regexStr": "11eyes",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DeepOne",
+          "regexStr": "DeepOne",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "euphoria",
+          "regexStr": "euphoria",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "G線上",
+          "regexStr": "G線上",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "グラビア",
+          "regexStr": "グラビア",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "グリザイア",
+          "regexStr": "グリザイア",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ジブリール",
+          "regexStr": "ジブリール",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "マイレージ",
+          "regexStr": "マイレージ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "まじこい",
+          "regexStr": "まじこい",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ランス",
+          "regexStr": "ランス",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レリッシュ",
+          "regexStr": "レリッシュ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "愛娘",
+          "regexStr": "愛娘",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "戦神館",
+          "regexStr": "戦神館",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "姫狩り",
+          "regexStr": "姫狩り",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "累計課金",
+          "regexStr": "累計課金",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "パッシブ条件": {
+      "columnsStr": "6",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "属性のみ",
+          "regexStr": "(火|水|風|雷|光|闇|暁|月虹)",
+          "exceptStr": "(長剣|槍|弓|斧槌|銃|杖|短剣|宝器|武具)"
+        },
+        {
+          "buttonName": "武器種のみ",
+          "regexStr": "",
+          "exceptStr": "(火|水|風|雷|光|闇|暁|月虹)"
+        },
+        {
+          "buttonName": "属性と武器種",
+          "regexStr": "(?=.*(火|水|風|雷|光|闇|暁|月虹))(?=.*(長剣|槍|弓|斧槌|銃|杖|短剣|宝器|武具))",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火",
+          "regexStr": "(^|&br;)火",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "水",
+          "regexStr": "(^|&br;)水",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "風",
+          "regexStr": "(^|&br;)風",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "雷",
+          "regexStr": "(^|&br;)雷",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "光",
+          "regexStr": "(^|&br;)光",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "闇",
+          "regexStr": "(^|&br;)闇",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暁",
+          "regexStr": "(^|&br;)暁",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "月虹",
+          "regexStr": "(^|&br;)月虹",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "長剣",
+          "regexStr": "長剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "斧槌",
+          "regexStr": "斧槌",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "短剣",
+          "regexStr": "短剣",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武具",
+          "regexStr": "武具",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "槍",
+          "regexStr": "槍",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "杖",
+          "regexStr": "杖",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "弓",
+          "regexStr": "弓",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "銃",
+          "regexStr": "銃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "宝器",
+          "regexStr": "宝器",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全",
+          "regexStr": "全",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "BS対象": {
+      "columnsStr": "7",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "単体",
+          "regexStr": "【BS】(遠|近|中)単",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体",
+          "regexStr": "【BS】(遠|近|中)全",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "縦列",
+          "regexStr": "【BS】(遠|近|中)縦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "横列",
+          "regexStr": "【BS】(遠|近|中)横",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "十字",
+          "regexStr": "【BS】(遠|近|中)十",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "1回",
+          "regexStr": "【BS】.*?1回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2回",
+          "regexStr": "【BS】.*?(1-)?2回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3回",
+          "regexStr": "【BS】.*?(\\d-)?3回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "4回",
+          "regexStr": "【BS】.*?(\\d-)?4回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "5回",
+          "regexStr": "【BS】.*?(\\d-)?5回",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "専用対象": {
+      "columnsStr": "7",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "単体",
+          "regexStr": "【専用】(遠|近|中)単",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体",
+          "regexStr": "【専用】(遠|近|中)全",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "縦列",
+          "regexStr": "【専用】(遠|近|中)縦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "横列",
+          "regexStr": "【専用】(遠|近|中)横",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "十字",
+          "regexStr": "【専用】(遠|近|中)十",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "1回",
+          "regexStr": "【専用】.*?1回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2回",
+          "regexStr": "【専用】.*?(1-)?2回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3回",
+          "regexStr": "【専用】.*?(\\d-)?3回",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "4回",
+          "regexStr": "【専用】.*?(\\d-)?4回",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "要約": {
+      "columnsStr": "0",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "CRT",
+          "regexStr": "CRT(?!ダメ)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "CRTなし",
+          "regexStr": "",
+          "exceptStr": "CRT(?!ダメ)"
+        },
+        {
+          "buttonName": "上限or追撃",
+          "regexStr": "(上限[^+]|追撃)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "上限or追撃なし",
+          "regexStr": "",
+          "exceptStr": "(上限[^+]|追撃)"
+        },
+        {
+          "buttonName": "デバフ",
+          "regexStr": "thistle",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "デバフなし",
+          "regexStr": "",
+          "exceptStr": "thistle"
+        },
+        {
+          "buttonName": "HP回復",
+          "regexStr": "(HP(継続)?回復|吸魂)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "HP回復なし",
+          "regexStr": "",
+          "exceptStr": "(HP(継続)?回復|吸魂)"
+        },
+        {
+          "buttonName": "武器回数増加",
+          "regexStr": "武器回数(回復|保護)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "強化解除",
+          "regexStr": "強化解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体解除",
+          "regexStr": "弱体解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体無効",
+          "regexStr": "弱体無効",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回避",
+          "regexStr": "回避[^率]",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "パワーゲージ",
+          "regexStr": "パワーゲージ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "テンプレ": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "空行削除",
+          "regexStr": "",
+          "exceptStr": "^$"
+        },
+        {
+          "buttonName": "Button",
+          "regexStr": "",
+          "exceptStr": ""
+        }
+      ]
+    }
+  },
+  "globalLogic": "AND",
+  "stickyEnabled": true,
+  "minimized": false
+}
