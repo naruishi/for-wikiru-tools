@@ -6,33 +6,33 @@
       "buttons": [
         {
           "buttonName": "火",
-          "regexStr": "F8C7C7",
+          "regexStr": "(F8C7C7|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
         {
           "buttonName": "水",
-          "regexStr": "BFD6F6",
+          "regexStr": "(BFD6F6|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
         {
           "buttonName": "風",
-          "regexStr": "CDEFC0",
+          "regexStr": "(CDEFC0|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
         {
           "buttonName": "雷",
-          "regexStr": "ffff7f",
+          "regexStr": "(ffff7f|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
         {
           "buttonName": "光",
-          "regexStr": "FBFAE7",
+          "regexStr": "(FBFAE7|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
 
         {
           "buttonName": "闇",
-          "regexStr": "E5C0F4",
+          "regexStr": "(E5C0F4|【○○】|重騎士|エイドス|躯)",
           "exceptStr": ""
         },
         {
