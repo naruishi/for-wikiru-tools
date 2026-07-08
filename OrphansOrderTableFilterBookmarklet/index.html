@@ -9,9 +9,29 @@
   <body>
     <div class="container">
       <h1>テーブルフィルター for wiki ブックマークレット</h1>
+
+      <div class="image-slider">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+          "
+        ></div>
+        <img
+          id="previewImage"
+          src="./img/sample.png"
+          alt="Table Filter Bookmarklet Preview"
+        />
+      </div>
+
       <p class="subtitle">
         ミナシゴノシゴトWikiのキャラ性能比較、戦神性能比較、武器早見表のページにテーブルフィルターを設置します。
-        多分とのフラWikiのスキル・アビリティ一覧にも使えます。
+        多分とのフラWikiのスキル・アビリティ一覧にも使えます。<br />
+        フィルター設定はボタンとして任意に追加・削除でき、設定全体をJSON形式でインポート・エクスポートできます。
       </p>
 
       <div class="instructions">
@@ -22,6 +42,9 @@
             または、ページのブックマークを作成して、URLを下のコードに置き換える
           </li>
           <li>フィルタリング機能が必要なページで、ブックマークをクリック</li>
+          <li>
+            フィルター設定を登録するか、このページにあるJSONをインポートします。
+          </li>
         </ol>
       </div>
 

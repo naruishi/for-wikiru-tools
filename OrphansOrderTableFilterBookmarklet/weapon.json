@@ -412,6 +412,738 @@
         }
       ]
     },
+    "即時効果": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "BG+",
+          "regexStr": "BG+",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "HP回復",
+          "regexStr": "HP回復(?!量)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "パワーゲージ-",
+          "regexStr": "パワーゲージ-",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "フィールド",
+          "regexStr": "フィールド",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レイジゲージ-",
+          "regexStr": "レイジゲージ-",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レイジゲージ+",
+          "regexStr": "レイジゲージ\\+",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "強化解除",
+          "regexStr": "強化解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身BG+",
+          "regexStr": "自身BG\\+",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身HP回復",
+          "regexStr": "自身HP回復(?!量)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身武器回数保護",
+          "regexStr": "自身武器回数保護",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体解除",
+          "regexStr": "弱体解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "前強化解除",
+          "regexStr": "前強化解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器回数回復",
+          "regexStr": "武器回数回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器回数保護",
+          "regexStr": "武器回数保護",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "戦神召喚時コンボ",
+          "regexStr": "戦神召喚時コンボ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全得意武器追加",
+          "regexStr": "全得意武器追加",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "ステバフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "ATK",
+          "regexStr": "(?<!M)ATK(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ATK増強",
+          "regexStr": "(?<!M)ATK増強",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "CRT",
+          "regexStr": "CRT(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF",
+          "regexStr": "(?<!M)DEF(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MATK",
+          "regexStr": "MATK(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MATK継戦",
+          "regexStr": "MATK継戦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MATK増強",
+          "regexStr": "MATK増強",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MDEF",
+          "regexStr": "MDEF(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MIND",
+          "regexStr": "MIND(?!-|ダウン|継戦|増強)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SPD",
+          "regexStr": "SPD",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器ステ",
+          "regexStr": "(長剣|斧槌|弓|槍|銃|杖|宝器|武具|短剣)ステ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "BG上昇量",
+          "regexStr": "BG上昇量",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "HP回復量",
+          "regexStr": "HP回復量",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "物理耐性",
+          "regexStr": "物理耐性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体耐性",
+          "regexStr": "弱体耐性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回避率",
+          "regexStr": "回避率",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体付与率",
+          "regexStr": "弱体付与率",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "与ダメバフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "BSダメ",
+          "regexStr": "BSダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "CRTダメ",
+          "regexStr": "CRTダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アビダメ",
+          "regexStr": "アビダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "スタン特攻ダメ",
+          "regexStr": "スタン特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメ",
+          "regexStr": "全ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レイジ特攻ダメ",
+          "regexStr": "レイジ特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暗闇特攻ダメ",
+          "regexStr": "暗闇特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "属性ダメ",
+          "regexStr": "(火|水|風|雷|光|闇)ダメ(?!上|カ)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火傷特攻ダメ",
+          "regexStr": "火傷特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "活水",
+          "regexStr": "活水",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "死水",
+          "regexStr": "死水",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "集中ダメ",
+          "regexStr": "集中ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器ダメ",
+          "regexStr": "(長剣|斧槌|弓|槍|銃|杖|宝器|武具|短剣)ダメ(?!上限|カット)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "毒特攻ダメ",
+          "regexStr": "毒特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "封印特攻ダメ",
+          "regexStr": "封印特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "麻痺特攻ダメ",
+          "regexStr": "麻痺特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "裂傷特攻ダメ",
+          "regexStr": "裂傷特攻ダメ(?!上限)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "感電特攻ダメ",
+          "regexStr": "感電特攻ダメ(?!上限)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "ダメ上限バフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "BSダメ上限",
+          "regexStr": "BSダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "BSダメ上限\\+",
+          "regexStr": "BSダメ上限\\+",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アビダメ上限",
+          "regexStr": "アビダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "スタン特攻ダメ上限",
+          "regexStr": "スタン特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメ上限",
+          "regexStr": "(?<!BS|アビ)ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメ上限+",
+          "regexStr": "(?<!BS|アビ)ダメ上限\\+",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レイジ特攻ダメ上限",
+          "regexStr": "レイジ特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暗闇特攻ダメ上限",
+          "regexStr": "暗闇特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "属性ダメ上限",
+          "regexStr": "(火|水|風|雷|光|闇)ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火傷特攻ダメ上限",
+          "regexStr": "火傷特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "枯渇特攻ダメ上限",
+          "regexStr": "枯渇特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "集中ダメ上限",
+          "regexStr": "集中ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器ダメ上限",
+          "regexStr": "(長剣|斧槌|弓|槍|銃|杖|宝器|武具|短剣)ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "裂傷特攻ダメ上限",
+          "regexStr": "裂傷特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "封印特攻ダメ上限",
+          "regexStr": "封印特攻ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "追撃",
+          "regexStr": "(?<!BS|アビ)追撃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アビ追撃",
+          "regexStr": "アビ追撃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "BS追撃",
+          "regexStr": "BS追撃",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "バフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "HP継続回復",
+          "regexStr": "HP継続回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "吸魂",
+          "regexStr": "吸魂",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "蘇生",
+          "regexStr": "蘇生",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメカット",
+          "regexStr": "ダメカット",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダブルアタック",
+          "regexStr": "ダブルアタック",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "バリア",
+          "regexStr": "バリア",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "果敢",
+          "regexStr": "果敢",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "かばう",
+          "regexStr": "かばう",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "属性ダメカット",
+          "regexStr": "(火|水|風|雷|光|闇)ダメカット",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回避",
+          "regexStr": "回避(?!率)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体無効",
+          "regexStr": "弱体無効",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "応戦",
+          "regexStr": "応戦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "迎撃",
+          "regexStr": "迎撃",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "ステデバフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "ATKダウン",
+          "regexStr": "ATKダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEFダウン",
+          "regexStr": "DEFダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MATKダウン",
+          "regexStr": "MATKダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MDEFダウン",
+          "regexStr": "MDEFダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "MINDダウン",
+          "regexStr": "MINDダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SPDダウン",
+          "regexStr": "SPDダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "属性耐性ダウン",
+          "regexStr": "(火|水|風|雷|光|闇)耐性ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "物理耐性ダウン",
+          "regexStr": "物理耐性ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "魔法耐性ダウン",
+          "regexStr": "魔法耐性ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "弱体耐性ダウン",
+          "regexStr": "弱体耐性ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回復量ダウン",
+          "regexStr": "回復量ダウン",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "被ダメデバフ": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "属性被ダメ",
+          "regexStr": "(火|水|風|雷|光|闇|暁|月虹)被ダメ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "属性被ダメ上限",
+          "regexStr": "(火|水|風|雷|光|闇|暁|月虹)被ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器被ダメ",
+          "regexStr": "(長剣|斧槌|弓|槍|銃|杖|宝器|武具|短剣)被ダメ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "武器被ダメ上限",
+          "regexStr": "(長剣|斧槌|弓|槍|銃|杖|宝器|武具|短剣)被ダメ上限",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "呪縛",
+          "regexStr": "呪縛",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "呪縛被ダメ上限",
+          "regexStr": "呪縛被ダメ上限",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "状態異常": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "バインド",
+          "regexStr": "バインド(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暗闇",
+          "regexStr": "暗闇(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火傷",
+          "regexStr": "火傷(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "感電",
+          "regexStr": "感電(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "幻惑",
+          "regexStr": "幻惑(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "枯渇",
+          "regexStr": "枯渇(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "睡眠",
+          "regexStr": "睡眠(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "毒",
+          "regexStr": "毒(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "封印",
+          "regexStr": "封印(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "麻痺",
+          "regexStr": "麻痺(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "裂傷",
+          "regexStr": "裂傷(?!特)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "優柔",
+          "regexStr": "優柔",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "効果量": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "CRT10-19%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "CRT20-29%",
+          "regexStr": "(自身)?(?<!自身)(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?2\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "CRT30-39%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?3\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "CRT40-49%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?4\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "ダメ上限10-19%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "ダメ上限20-29%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?2\\d%",
+          "exceptStr": "自身"
+        },
+        {
+          "buttonName": "自身CRT10-19%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT20-29%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?2\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT30-39%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?3\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT40-49%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?4\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT50-59%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?5\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT60-69%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?6\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT70-79%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?7\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT80-89%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?8\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身CRT100-199%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?CRT\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身ダメ上限10-19%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身ダメ上限20-29%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?2\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身ダメ上限30-39%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?3\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身ダメ上限40-49%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?4\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身ダメ上限50-59%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?ダメ上限\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?5\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身追撃10-19%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?追撃\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身追撃20-29%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?追撃\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?2\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自身追撃30-39%",
+          "regexStr": "自身(\\(前\\))?(BS|アビ)?追撃\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?3\\d%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "追撃10-19%",
+          "regexStr": "(自身)?(\\(前\\))?(BS|アビ)?追撃\\.?(累積|継戦|増強|\\(消去不可\\))?\\.?(\\d+～)?1\\d%",
+          "exceptStr": "自身"
+        }
+      ]
+    },
+
     "要約": {
       "columnsStr": "0",
       "logic": "AND",
