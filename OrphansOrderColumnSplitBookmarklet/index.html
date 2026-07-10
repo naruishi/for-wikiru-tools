@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ミナシゴノシゴトwiki専用武器列新設ブックマークレット</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ミナシゴノシゴトwiki専用武器列新設ブックマークレット</h1>
+
+      <div class="image-slider">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+          "
+        ></div>
+        <img
+          id="previewImage"
+          src="./img/sample.png"
+          alt="Table Filter Bookmarklet Preview"
+        />
+      </div>
+
+      <p class="subtitle">
+        ミナシゴノシゴトWikiのキャラ性能比較から、【専用】以後を隣の列を設置して分離します。<br />
+        テーブルフィルターブックマークレットでブレイブスキルと専用武器を分けて検索することができます。
+      </p>
+
+      <div class="instructions">
+        <h3>📋 使い方</h3>
+        <ol>
+          <li>下のボタンをドラッグしてブックマークバーにドロップ</li>
+          <li>
+            または、ページのブックマークを作成して、URLを下のコードに置き換える
+          </li>
+          <li>キャラ性能比較のページで、ブックマークをクリック</li>
+        </ol>
+      </div>
+
+      <div id="method1">
+        <div class="method-title">方法1: ドラッグ＆ドロップ</div>
+        <a
+          id="bookmarkLink"
+          class="bookmark-link"
+          href="javascript:void(0);"
+          draggable="true"
+        >
+          【専用】分離
+        </a>
+        <p style="color: #999; font-size: 12px">
+          このボタンをブックマークバーにドラッグしてください
+        </p>
+      </div>
+
+      <div id="method2">
+        <div class="method-title">方法2: コピー＆ペースト</div>
+        <div class="copy-section">
+          <p style="margin-bottom: 10px; color: #666; font-size: 14px">
+            ブックマークレットのコードをコピー:
+          </p>
+          <div class="code-box" id="codeBox">
+            <span class="loading">読み込み中...</span>
+          </div>
+          <button class="copy-button" id="copyButton" style="display: none">
+            コードをコピー
+          </button>
+        </div>
+        <p style="color: #666; font-size: 12px; line-height: 1.6">
+          ✓ 新しいブックマークを作成します<br />
+          ✓ 名前を設定します<br />
+          ✓ URLの欄に上のコードをペーストします<br />
+          ✓ 保存して完了です
+        </p>
+      </div>
+
+      <p><a href="../index.html">HOMEへ戻る</a></p>
+    </div>
+    <script>
+      async function copyText(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (error) {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textArea);
+          return true;
+        }
+      }
+
+      // compiled.js の内容を読み込んでブックマークレットを作成
+      async function initBookmarklet() {
+        try {
+          const response = await fetch("./index.global.js");
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const bookmarkletCode = await response.text();
+
+          // ブックマークレット用のHREFを設定
+          const bookmarkLink = document.getElementById("bookmarkLink");
+          bookmarkLink.href = bookmarkletCode;
+
+          // コードボックスに表示
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = bookmarkletCode;
+
+          // コピーボタンを表示
+          const copyButton = document.getElementById("copyButton");
+          copyButton.style.display = "block";
+
+          // コピーボタンの機能
+          copyButton.addEventListener("click", async function () {
+            await copyText(bookmarkletCode);
+            const successMsg = document.getElementById("successMessage");
+            successMsg.style.display = "block";
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 3000);
+          });
+        } catch (error) {
+          console.error("Failed to load bookmarklet:", error);
+          const errorMsg = document.getElementById("errorMessage");
+          errorMsg.style.display = "block";
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = "エラー: compiled.js を読み込めませんでした";
+        }
+      }
+
+      // ページ読み込み時に実行
+      document.addEventListener("DOMContentLoaded", initBookmarklet);
+
+      // ドラッグアイコン表示用
+      document
+        .getElementById("bookmarkLink")
+        .addEventListener("dragstart", function (e) {
+          e.dataTransfer.effectAllowed = "copy";
+        });
+    </script>
+  </body>
+</html>

@@ -707,7 +707,7 @@
       ]
     },
     "専用対象": {
-      "columnsStr": "7",
+      "columnsStr": "8",
       "logic": "AND",
       "buttons": [
         {
@@ -758,7 +758,7 @@
       ]
     },
     "即時効果": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -844,7 +844,7 @@
       ]
     },
     "ステバフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -935,7 +935,7 @@
       ]
     },
     "与ダメバフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1031,7 +1031,7 @@
       ]
     },
     "ダメ上限バフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1132,7 +1132,7 @@
       ]
     },
     "バフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1203,7 +1203,7 @@
       ]
     },
     "ステデバフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1264,7 +1264,7 @@
       ]
     },
     "被ダメデバフ": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1300,7 +1300,7 @@
       ]
     },
     "状態異常": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1366,7 +1366,7 @@
       ]
     },
     "効果量": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "OR",
       "buttons": [
         {
@@ -1542,7 +1542,7 @@
       ]
     },
     "要約": {
-      "columnsStr": "6-7",
+      "columnsStr": "6-8",
       "logic": "AND",
       "buttons": [
         {
