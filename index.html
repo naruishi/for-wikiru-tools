@@ -3,273 +3,314 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikiru編集ヘルパー - ブックマークレット集</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>テーブルフィルター for wiki ブックマークレット</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>🚀 Wikiru編集ヘルパー</h1>
+      <h1>テーブルフィルター for wiki ブックマークレット</h1>
+
+      <div class="image-slider">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+          "
+        ></div>
+        <img
+          id="previewImage"
+          src="./img/sample.png"
+          alt="Table Filter Bookmarklet Preview"
+        />
+      </div>
+
       <p class="subtitle">
-        Wikiru.jpの効率を高めるブックマークレット・ツール集
+        ミナシゴノシゴトWikiのキャラ性能比較、戦神性能比較、武器早見表のページにテーブルフィルターを設置します。<br />
+        多分とのフラWikiのスキル・アビリティ一覧にも使えます。<br />
+        サンプルの設定用JSONも配布しています。<br />
       </p>
 
-      <div class="instructions" style="margin-top: 40px">
-        <h3>📌 はじめに</h3>
+      <div class="instructions">
+        <h3>機能</h3>
+        <ul>
+          <li>フィルター設定は利用者が任意に追加・削除できます。</li>
+          <li>設定はブラウザ内のストレージにローカル保存されます。</li>
+          <li>
+            設定全体をJSON形式でクリップボードにインポート・エクスポートできます。
+          </li>
+          <li>
+            フィルター設定にはマッチング条件・除外条件を正規表現で定義できます。
+          </li>
+          <li>グループはドラッグ＆ドロップで任意の順番に変更できます。</li>
+          <li>AND検索OR検索かをチェックボックスで切り替えできます。</li>
+          <li>
+            マッチング対象列を指定できます。0にすると行全体、1-2で1列目と2列目を対象にします。
+          </li>
+        </ul>
+      </div>
+
+      <div class="instructions">
+        <h3>📋 使い方</h3>
         <ol>
-          <p>Wikiru.jpの記事編集や閲覧に個人的に使用しているツール群です。</p>
+          <li>下のボタンをドラッグしてブックマークバーにドロップ</li>
+          <li>
+            または、ページのブックマークを作成して、URLを下のコードに置き換える
+          </li>
+          <li>フィルタリング機能が必要なページで、ブックマークをクリック</li>
+          <li>
+            フィルター設定を登録するか、このページにあるJSONをインポートします。
+          </li>
         </ol>
       </div>
 
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 ミナシゴノシゴトwiki専用武器列新設ブックマークレット</h3>
-          <p>
-            ミナシゴノシゴトWikiのキャラ性能比較から、【専用】以後を隣の列を設置して分離します。<br />
-            テーブルフィルターブックマークレットでブレイブスキルと専用武器を分けて検索することができます。
+      <div id="method1">
+        <div class="method-title">方法1: ドラッグ＆ドロップ</div>
+        <a
+          id="bookmarkLink"
+          class="bookmark-link"
+          href="javascript:void(0);"
+          draggable="true"
+        >
+          テーブルフィルター
+        </a>
+        <p style="color: #999; font-size: 12px">
+          このボタンをブックマークバーにドラッグしてください
+        </p>
+      </div>
+
+      <div id="method2">
+        <div class="method-title">方法2: コピー＆ペースト</div>
+        <div class="copy-section">
+          <p style="margin-bottom: 10px; color: #666; font-size: 14px">
+            ブックマークレットのコードをコピー:
           </p>
-          <a
-            href="./OrphansOrderColumnSplitBookmarklet/index.html"
-            class="tool-card-link"
-            >詳細を見る →</a
+          <div class="code-box" id="codeBox">
+            <span class="loading">読み込み中...</span>
+          </div>
+          <button class="copy-button" id="copyButton" style="display: none">
+            コードをコピー
+          </button>
+        </div>
+        <p style="color: #666; font-size: 12px; line-height: 1.6">
+          ✓ 新しいブックマークを作成します<br />
+          ✓ 名前を設定します<br />
+          ✓ URLの欄に上のコードをペーストします<br />
+          ✓ 保存して完了です
+        </p>
+      </div>
+
+      <div class="json-section" style="margin-top: 24px">
+        <h3>📄 JSON 設定</h3>
+        <p style="color: #666; font-size: 14px; margin-bottom: 12px">
+          以下の JSON
+          をコピーし、該当ページでブックマークレットを起動したら、Importボタンを押します。
+        </p>
+
+        <div style="margin-bottom: 16px">
+          <label
+            for="minasihgoJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >キャラ性能比較用GUI設定</label
           >
+          <textarea
+            id="minasihgoJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="minasihgoJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+
+        <div style="margin-bottom: 16px">
+          <label
+            for="shenshinJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >戦神性能比較用GUI設定</label
+          >
+          <textarea
+            id="shenshinJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="shenshinJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+
+        <div>
+          <label
+            for="weaponJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >武器早見表用GUI設定</label
+          >
+          <textarea
+            id="weaponJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="weaponJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
         </div>
       </div>
 
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 テーブルフィルター for wiki ブックマークレット</h3>
-          <p>
-            ミナシゴノシゴトWikiのキャラ性能比較、戦神性能比較、武器早見表のページにテーブルフィルターを設置します。
-            多分とのフラWikiのスキル・アビリティ一覧にも使えます。
-          </p>
-          <a
-            href="./OrphansOrderTableFilterBookmarklet/index.html"
-            class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
+      <div id="successMessage" class="success">✓ コードをコピーしました！</div>
 
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>テーブルフィルター用JSONパーツ生成ツール</h3>
-          <p>
-            ,区切りで単語を入力すると、テーブルフィルター用ボタンに変換します。
-          </p>
-          <a
-            href="./OrphansOrderTableFilterBookmarklet/batch-creation.html"
-            class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
+      <div id="errorMessage" class="error" style="display: none">
+        ⚠ ブックマークレットの読み込みに失敗しました
       </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 FilterTable拡張ブックマークレット</h3>
-          <p>
-            Wikiru.jpのフィルタテーブルを拡張し、行の自由な並べ替え・OR検索とAND検索の入れ替えができます。設定はキャッシュに保存可能。
-          </p>
-          <a href="./filter-table/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 Wkiruメニュー非表示ブックマークレット</h3>
-          <p>
-            Wikiru.jpの左側にあるメニューバーを非表示にします。もういちど実行すると、メニューバーが再表示されます
-          </p>
-          <a href="./hide-menu-bookmarklet/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 Wikiru 行チェックボックス追加ブックマークレット</h3>
-          <p>
-            Wikiru.jpのページにある表に行ごとにチェックボックスを追加します。チェック状態はキャッシュに保存されます。
-            チェックした行のみを表示したり、非表示にしたりできます。
-          </p>
-          <a
-            href="./addCheckBoxToTableBookmarklet/index.html"
-            class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>🔖 Wikiruページ名コピーブックマークレット</h3>
-          <p>
-            Wikiru.jpのページにある内部リンクに1秒以上マウスカーソルを合わせると、ページ名部分をクリップボードにコピーします。
-          </p>
-          <a href="./copyPageNameBookmarklet/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>表からセルを抽出してclipboard関数に変換</h3>
-          <p>
-            |区切りの表から列の範囲を指定して抽出します。n番目の「|」からm番目の「|」までの列を抽出できます。
-            抽出した内容はワンクリックでクリップボードにコピーできるclipboard関数に変換されます。
-          </p>
-          <a href="./extract-cell/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>txt置換（TAB区切りワードリスト使用）</h3>
-          <p>
-            置換前
-            置換後の組み合わせで登録されたワード単位で一括置換を行います。
-          </p>
-          <a href="./replace-text-from-list/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>flex関数ブロック削除</h3>
-          <p>wikiruの編集ソースからflex関数を除去します。</p>
-          <a href="./delete-flex/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>文字列だけのページリンクにTooltipを追加</h3>
-          <p>
-            [[]]で囲まれたテキストをTooltipで置換します。マウスオーバーするとアイコンとリンクが表示されます。
-            アイコン画像がwikiにアップロードされているのに、キャラクター名だけが書かれているようなよくある記事に適用できます。
-            記事にアイコンを挿入するのと違いレイアウトを崩しません。
-          </p>
-          <a
-            href="./add-tool-tip-to-page-link/index.html"
-            class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>テーブル作成</h3>
-          <p>行頭、行末、タブ、スペースを|に置換します。</p>
-          <a href="./create-table/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>region関数ブロック削除</h3>
-          <p>編集ソースからregion関数を除去します。</p>
-          <a href="./delete-region/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>装飾関数削除</h3>
-          <p>編集ソースからcolor,size,tooltip関数を除去します。</p>
-          <a href="./delete-letter-decoration/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>テキスト降順並べかえ</h3>
-          <p>
-            テキストを行単位で逆順にソートします。ページ先頭が一番実装の古いキャラのテーブルを、最新キャラが先頭に来るように並べかえる時に使います。
-          </p>
-          <a href="./reverse-lines/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>重複行を削除（順序保持 or 昇順ソート）</h3>
-          <p>
-            テキストに対し行単位で重複行を削除します。順序保持か昇順ソートのどちらかを選択できます。
-          </p>
-          <a href="./undup-line/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>重複行を削除（空行は維持）</h3>
-          <p>
-            テキストに対し行単位で重複行を削除します。
-            空行は詰めずに維持されます。
-          </p>
-          <a href="./undup-line-maintain-void/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>テキスト行単位連結</h3>
-          <p>
-            左右のテキストの同じ行を連結します。2つのテキストの間に挟む文字を指定できます。
-          </p>
-          <a href="./concat-same-line/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>txt文字列数値インクリメンター</h3>
-          <p>
-            文字列内になる数値を指定した桁数でインクリメントします。数値の前後に文字列があってもOKです。
-          </p>
-          <a href="./string-incrementer/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-
-      <div class="tool-grid">
-        <div class="tool-card">
-          <h3>txt複数行を一行に変換</h3>
-          <p>行末にカンマを付けて一行にまとめる</p>
-          <a href="./mulch-lines-2-line/index.html" class="tool-card-link"
-            >詳細を見る →</a
-          >
-        </div>
-      </div>
-      <p style="text-align: center">
-        author: naruishi <a href="https://x.com/SRCdeFlash">X</a>
-      </p>
+      <p><a href="../index.html">HOMEへ戻る</a></p>
     </div>
+    <script>
+      async function copyText(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (error) {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textArea);
+          return true;
+        }
+      }
+
+      // compiled.js の内容を読み込んでブックマークレットを作成
+      async function initBookmarklet() {
+        try {
+          const response = await fetch("./index.global.js");
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const bookmarkletCode = await response.text();
+
+          // ブックマークレット用のHREFを設定
+          const bookmarkLink = document.getElementById("bookmarkLink");
+          bookmarkLink.href = bookmarkletCode;
+
+          // コードボックスに表示
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = bookmarkletCode;
+
+          // コピーボタンを表示
+          const copyButton = document.getElementById("copyButton");
+          copyButton.style.display = "block";
+
+          // コピーボタンの機能
+          copyButton.addEventListener("click", async function () {
+            await copyText(bookmarkletCode);
+            const successMsg = document.getElementById("successMessage");
+            successMsg.style.display = "block";
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 3000);
+          });
+        } catch (error) {
+          console.error("Failed to load bookmarklet:", error);
+          const errorMsg = document.getElementById("errorMessage");
+          errorMsg.style.display = "block";
+          const codeBox = document.getElementById("codeBox");
+          codeBox.textContent = "エラー: compiled.js を読み込めませんでした";
+        }
+      }
+
+      async function initJsonTexts() {
+        const jsonEntries = [
+          { id: "minasihgoJsonText", path: "./minasihgo.json" },
+          { id: "shenshinJsonText", path: "./shenshin.json" },
+          { id: "weaponJsonText", path: "./weapon.json" },
+        ];
+
+        for (const entry of jsonEntries) {
+          const textArea = document.getElementById(entry.id);
+          try {
+            const response = await fetch(entry.path);
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            textArea.value = await response.text();
+          } catch (error) {
+            textArea.value = `読み込みに失敗しました: ${error.message}`;
+          }
+        }
+      }
+
+      function initCopyButtons() {
+        document.querySelectorAll("[data-copy-target]").forEach((button) => {
+          button.addEventListener("click", async function () {
+            const targetId = this.getAttribute("data-copy-target");
+            const textArea = document.getElementById(targetId);
+            await copyText(textArea.value);
+            const successMsg = document.getElementById("successMessage");
+            successMsg.textContent = "✓ JSON をコピーしました！";
+            successMsg.style.display = "block";
+            setTimeout(() => {
+              successMsg.textContent = "✓ コードをコピーしました！";
+              successMsg.style.display = "none";
+            }, 3000);
+          });
+        });
+      }
+
+      // ページ読み込み時に実行
+      document.addEventListener("DOMContentLoaded", async function () {
+        await initBookmarklet();
+        await initJsonTexts();
+        initCopyButtons();
+      });
+
+      // ドラッグアイコン表示用
+      document
+        .getElementById("bookmarkLink")
+        .addEventListener("dragstart", function (e) {
+          e.dataTransfer.effectAllowed = "copy";
+        });
+    </script>
   </body>
 </html>
