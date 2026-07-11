@@ -652,7 +652,7 @@
     },
     "BS対象": {
       "columnsStr": "7",
-      "logic": "AND",
+      "logic": "OR",
       "buttons": [
         {
           "buttonName": "単体",
@@ -680,6 +680,17 @@
           "exceptStr": ""
         },
         {
+          "buttonName": "5回",
+          "regexStr": "【BS】.*?(\\d-)?5回",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "BS攻撃回数": {
+      "columnsStr": "7",
+      "logic": "OR",
+      "buttons": [
+        {
           "buttonName": "1回",
           "regexStr": "【BS】.*?1回",
           "exceptStr": ""
@@ -698,17 +709,12 @@
           "buttonName": "4回",
           "regexStr": "【BS】.*?(\\d-)?4回",
           "exceptStr": ""
-        },
-        {
-          "buttonName": "5回",
-          "regexStr": "【BS】.*?(\\d-)?5回",
-          "exceptStr": ""
         }
       ]
     },
     "専用対象": {
       "columnsStr": "8",
-      "logic": "AND",
+      "logic": "OR",
       "buttons": [
         {
           "buttonName": "単体",
@@ -734,7 +740,13 @@
           "buttonName": "十字",
           "regexStr": "【専用】(遠|近|中)十",
           "exceptStr": ""
-        },
+        }
+      ]
+    },
+    "専用攻撃回数": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
         {
           "buttonName": "1回",
           "regexStr": "【専用】.*?1回",
@@ -757,6 +769,7 @@
         }
       ]
     },
+
     "即時効果": {
       "columnsStr": "6-8",
       "logic": "OR",
