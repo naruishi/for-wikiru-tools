@@ -1,0 +1,495 @@
+{
+  "groups": {
+    "種別": {
+      "columnsStr": "3",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "通常",
+          "regexStr": "",
+          "exceptStr": "オルタ"
+        },
+        {
+          "buttonName": "オルタ",
+          "regexStr": "オルタ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "キャラ": {
+      "columnsStr": "4",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "アルテ",
+          "regexStr": "アルテ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ゴッホ",
+          "regexStr": "ゴッホ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ドナテッロ",
+          "regexStr": "ドナテッロ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "レンブラント",
+          "regexStr": "レンブラント",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アングル",
+          "regexStr": "アングル",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "マネ",
+          "regexStr": "マネ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "フェルメール",
+          "regexStr": "フェルメール",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ブグロー",
+          "regexStr": "ブグロー",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "セキエン",
+          "regexStr": "セキエン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ミケランジェロ",
+          "regexStr": "ミケランジェロ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ラファエロ",
+          "regexStr": "ラファエロ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ロダン",
+          "regexStr": "ロダン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "セザンヌ",
+          "regexStr": "セザンヌ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "モリゾ",
+          "regexStr": "モリゾ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ボッティチェリ",
+          "regexStr": "ボッティチェリ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ルノワール",
+          "regexStr": "ルノワール",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "セッシュウ",
+          "regexStr": "セッシュウ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "コラボ",
+          "regexStr": "",
+          "exceptStr": "(アルテ|ゴッホ|ドナテッロ|レンブラント|アングル|マネ|フェルメール|ブグロー|セキエン|ミケランジェロ|ラファエロ|ロダン|セザンヌ|モリゾ|ボッティチェリ|ルノワール|セッシュウ)"
+        }
+      ]
+    },
+    "属性": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "赤",
+          "regexStr": "赤",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "青",
+          "regexStr": "青",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "緑",
+          "regexStr": "緑",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "白",
+          "regexStr": "白",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "紫",
+          "regexStr": "紫",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "通常攻撃": {
+      "columnsStr": "6",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "物理",
+          "regexStr": "物理",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "炎",
+          "regexStr": "炎",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "水",
+          "regexStr": "水",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "風",
+          "regexStr": "風",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "雷",
+          "regexStr": "雷",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "歩数": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "4",
+          "regexStr": "4",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "5",
+          "regexStr": "5",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "物理": {
+      "columnsStr": "9",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3",
+          "regexStr": "3",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "炎": {
+      "columnsStr": "10",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3",
+          "regexStr": "3",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "水": {
+      "columnsStr": "11",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3",
+          "regexStr": "3",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "風": {
+      "columnsStr": "12",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3",
+          "regexStr": "3",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "雷": {
+      "columnsStr": "13",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "0",
+          "regexStr": "0",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1",
+          "regexStr": "1",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2",
+          "regexStr": "2",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3",
+          "regexStr": "3",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "潜在ポテ": {
+      "columnsStr": "14",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "攻撃アップ大",
+          "regexStr": "攻撃アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "防御アップ大",
+          "regexStr": "防御アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "体力アップ大",
+          "regexStr": "体力アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "敏捷アップ大",
+          "regexStr": "敏捷アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "精神アップ大",
+          "regexStr": "精神アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "器用アップ大",
+          "regexStr": "器用アップ大",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "破壊回復",
+          "regexStr": "破壊回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "猛毒",
+          "regexStr": "猛毒",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "影縫",
+          "regexStr": "影縫",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火傷",
+          "regexStr": "火傷",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "感電",
+          "regexStr": "感電",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "デバフ",
+          "regexStr": "デバフ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "入魂時攻撃",
+          "regexStr": "入魂時攻撃",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "年": {
+      "columnsStr": "17",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "2023",
+          "regexStr": "2023",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2024",
+          "regexStr": "2024",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2025",
+          "regexStr": "2025",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2026",
+          "regexStr": "2026",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "月": {
+      "columnsStr": "17",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "01",
+          "regexStr": "/01/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "02",
+          "regexStr": "/02/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "03",
+          "regexStr": "/03/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "04",
+          "regexStr": "/04/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "05",
+          "regexStr": "/05/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "06",
+          "regexStr": "/06/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "07",
+          "regexStr": "/07/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "08",
+          "regexStr": "/08/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "09",
+          "regexStr": "/09/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "10",
+          "regexStr": "/10/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "11",
+          "regexStr": "/11/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "12",
+          "regexStr": "/12/",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "サンプル": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": []
+    }
+  },
+  "globalLogic": "AND",
+  "stickyEnabled": false,
+  "minimized": false
+}
