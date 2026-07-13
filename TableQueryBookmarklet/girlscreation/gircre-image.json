@@ -1,0 +1,176 @@
+{
+  "groups": {
+    "タイプ": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "物理",
+          "regexStr": "物理",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "炎",
+          "regexStr": "炎",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "水",
+          "regexStr": "水",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "風",
+          "regexStr": "風",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "雷",
+          "regexStr": "雷",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "すれ違い": {
+      "columnsStr": "6",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "攻撃",
+          "regexStr": "攻撃",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "防御",
+          "regexStr": "防御",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "体力",
+          "regexStr": "体力",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "敏捷",
+          "regexStr": "敏捷",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "精神",
+          "regexStr": "精神",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "器用",
+          "regexStr": "器用",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "回復",
+          "regexStr": "回復",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "年": {
+      "columnsStr": "16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "2023",
+          "regexStr": "2023",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2024",
+          "regexStr": "2024",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2025",
+          "regexStr": "2025",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "2026",
+          "regexStr": "2026",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "月": {
+      "columnsStr": "16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "01",
+          "regexStr": "/01/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "02",
+          "regexStr": "/02/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "03",
+          "regexStr": "/03/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "04",
+          "regexStr": "/04/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "05",
+          "regexStr": "/05/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "06",
+          "regexStr": "/06/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "07",
+          "regexStr": "/07/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "08",
+          "regexStr": "/08/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "09",
+          "regexStr": "/09/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "10",
+          "regexStr": "/10/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "11",
+          "regexStr": "/11/",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "12",
+          "regexStr": "/12/",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "サンプル": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": []
+    }
+  },
+  "globalLogic": "AND",
+  "stickyEnabled": false,
+  "minimized": false
+}

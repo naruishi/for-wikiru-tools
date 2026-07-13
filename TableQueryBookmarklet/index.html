@@ -226,6 +226,63 @@
             この JSON をコピー
           </button>
         </div>
+
+        <div>
+          <label
+            for="girlCreImageJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >ガークリwiki星5イマージュ一覧</label
+          >
+          <textarea
+            id="girlCreImageJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="girlCreImageJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+        <div>
+          <label
+            for="girlCreSkillJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >ガークリwiki技法一覧</label
+          >
+          <textarea
+            id="girlCreSkillJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="girlCreSkillJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
       </div>
 
       <div id="successMessage" class="success">✓ コードをコピーしました！</div>
@@ -292,10 +349,21 @@
 
       async function initJsonTexts() {
         const jsonEntries = [
-          { id: "minasihgoJsonText", path: "./minasihgo.json" },
-          { id: "shenshinJsonText", path: "./shenshin.json" },
-          { id: "weaponJsonText", path: "./weapon.json" },
-          { id: "girlCreArtistJsonText", path: "./gircre-artist.json" },
+          { id: "minasihgoJsonText", path: "./orphansorder/minasihgo.json" },
+          { id: "shenshinJsonText", path: "./orphansorder/shenshin.json" },
+          { id: "weaponJsonText", path: "./orphansorder/weapon.json" },
+          {
+            id: "girlCreArtistJsonText",
+            path: "./girlscreation/gircre-artist.json",
+          },
+          {
+            id: "girlCreImageJsonText",
+            path: "./girlscreation/gircre-image.json",
+          },
+          {
+            id: "girlCreSkillJsonText",
+            path: "./girlscreation/gircre-skill.json",
+          },
         ];
 
         for (const entry of jsonEntries) {
