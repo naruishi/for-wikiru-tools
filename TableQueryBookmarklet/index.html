@@ -32,6 +32,7 @@
         wikiのテーブルにフィルターを設置します。<br />
         サンプルとして、ミナシゴノシゴトWikiのキャラ性能比較、戦神性能比較、武器早見表<br />
         ガールズクリエイションWikiの星5藝術家一覧、星5イマージュ一覧、技法一覧<br />
+        対魔忍RPGwikiのSR性能ページ<br />
         設定用JSONを配布しています。
       </p>
 
@@ -285,6 +286,37 @@
         </div>
       </div>
 
+        <div>
+          <label
+            for="taimaninRpgSrJsonText"
+            style="display: block; margin-bottom: 6px; font-weight: bold"
+            >対魔忍RPGwikiSR性能</label
+          >
+          <textarea
+            id="taimaninRpgSrJsonText"
+            readonly
+            spellcheck="false"
+            style="
+              width: 100%;
+              min-height: 160px;
+              font-family: Consolas, monospace;
+              font-size: 12px;
+              box-sizing: border-box;
+              resize: vertical;
+            "
+          ></textarea>
+          <button
+            type="button"
+            class="copy-button"
+            data-copy-target="taimaninRpgSrJsonText"
+            style="margin-top: 8px"
+          >
+            この JSON をコピー
+          </button>
+        </div>
+      </div>
+
+
       <div id="successMessage" class="success">✓ コードをコピーしました！</div>
 
       <div id="errorMessage" class="error" style="display: none">
@@ -364,6 +396,7 @@
             id: "girlCreSkillJsonText",
             path: "./girlscreation/gircre-skill.json",
           },
+          { id: "taimaninRpgSrJsonText", path : "./taimaninrpg/sr.json"},
         ];
 
         for (const entry of jsonEntries) {

@@ -1,0 +1,1256 @@
+{
+  "groups": {
+    "属性": {
+      "columnsStr": "3",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "超人",
+          "regexStr": "超人",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "魔性",
+          "regexStr": "魔性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "精神",
+          "regexStr": "精神",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "自然",
+          "regexStr": "自然",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "科学",
+          "regexStr": "科学",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "特性": {
+      "columnsStr": "4",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "対魔忍",
+          "regexStr": "対魔忍",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ノマド",
+          "regexStr": "ノマド",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アイドル",
+          "regexStr": "アイドル",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "陰陽師",
+          "regexStr": "陰陽師",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "米連",
+          "regexStr": "米連",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "学園黙示録",
+          "regexStr": "学園黙示録",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "魔術",
+          "regexStr": "魔術",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "鬼",
+          "regexStr": "鬼",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "不死",
+          "regexStr": "不死",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "毒使い",
+          "regexStr": "毒使い",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "竜",
+          "regexStr": "竜",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "監獄戦艦",
+          "regexStr": "監獄戦艦",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "なし",
+          "regexStr": "^$",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "HP": {
+      "columnsStr": "5",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "2k",
+          "regexStr": "2\\d\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "3k",
+          "regexStr": "3\\d\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "4k",
+          "regexStr": "4\\d\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "5k",
+          "regexStr": "6\\d\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "7k",
+          "regexStr": "7\\d\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "8k",
+          "regexStr": "8\\d\\d\\d",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "SP": {
+      "columnsStr": "6",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "200台",
+          "regexStr": "2\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "300台",
+          "regexStr": "3\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "400台",
+          "regexStr": "4\\d\\d",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "ATK": {
+      "columnsStr": "7",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "100-599",
+          "regexStr": "(?<!\\d)[1-5]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "600-799",
+          "regexStr": "(?<!\\d)[6-7]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "800-999",
+          "regexStr": "(?<!\\d)[8-9]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1000-1199",
+          "regexStr": "1[0-1]\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1200-1399",
+          "regexStr": "1[2-3]\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1400-1599",
+          "regexStr": "1[4-5]\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1600-1799",
+          "regexStr": "1[6-7]\\d\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1800-1999",
+          "regexStr": "1[8-9]\\d\\d",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "DEF": {
+      "columnsStr": "8",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "100-399",
+          "regexStr": "(?<!\\d)[1-3]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "400-599",
+          "regexStr": "(?<!\\d)[4-5]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "600-799",
+          "regexStr": "(?<!\\d)[6-7]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "800-999",
+          "regexStr": "(?<!\\d)[8-9]\\d\\d(?!\\d)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "1000-",
+          "regexStr": "1\\d\\d\\d",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "SPD": {
+      "columnsStr": "9",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "10-49",
+          "regexStr": "[1-4]\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "50-59",
+          "regexStr": "5\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "60-69",
+          "regexStr": "6\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "70-79",
+          "regexStr": "7\\d",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "80-99",
+          "regexStr": "[8-9]\\d",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "入手": {
+      "columnsStr": "10",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "コード",
+          "regexStr": "コード",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "限定",
+          "regexStr": "限定",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "常設",
+          "regexStr": "常設",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "空欄",
+          "regexStr": "^$",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "ATKアップ": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(4[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-59%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(5[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体60-69%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(6[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体70-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?([7-9][0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体100-199%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?ATK(?:を)?(1\\d\\d%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "スキル威力": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?スキル威力(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?スキル威力(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?スキル威力(?:を)?([4-9][0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "会心率": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "必ず会心",
+          "regexStr": "必ず会心",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心率(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心率(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心率(?:を)?([4-9][0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "会心ダメージ": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?(4[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-59%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?(5[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体60-69%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?(6[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体70-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?会心ダメージ(?:を)?([7-9][0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "他攻撃バフ": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "攻撃によるダメージが10-29%アップ",
+          "regexStr": "攻撃によるダメージが([1-2]\\d%)アップ.(\\dT|永続)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "攻撃によるダメージが30-49%アップ",
+          "regexStr": "攻撃によるダメージが([3-4]\\d%)アップ.(\\dT|永続)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "攻撃によるダメージが50-99%アップ",
+          "regexStr": "攻撃によるダメージが([5-9]\\d%)アップ.(\\dT|永続)?",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "攻撃によるダメージが100-999%アップ",
+          "regexStr": "攻撃によるダメージが(\\d\\d\\d%)アップ.(\\dT|永続)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アタックブースト10-19%",
+          "regexStr": "(?:味方)(全体)(?:に|へ)アタックブースト(1\\d%)付与.(\\dT).",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アタックブースト20-29%",
+          "regexStr": "(?:味方)(全体)(?:に|へ)アタックブースト(2\\d%)付与.(\\dT).",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "アタックブースト30-39%",
+          "regexStr": "(?:味方)(全体)(?:に|へ)アタックブースト(3\\d%)付与.(\\dT).",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "特攻1-9%",
+          "regexStr": "特攻(\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "特攻10-19%",
+          "regexStr": "特攻(1\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "特攻20-29%",
+          "regexStr": "特攻(2\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "特攻30-99%",
+          "regexStr": "特攻(3\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "特攻40-99%",
+          "regexStr": "特攻([4-9]\\d%)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "最大HP": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?(?:最大)?HP(?:を)?(2[0-9]+%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?(?:最大)?HP(?:を)?(3[0-9]+%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?(?:最大)?HP(?:を)?(4[0-9]+%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?(?:最大)?HP(?:を)?([5-9][0-9]+%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "最大SP": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の((?!属性|自身)[\\s\\S])*?(\\+)?(最大)?SP(を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の((?!属性|自身)[\\s\\S])*?(\\+)?(最大)?SP(を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-99%",
+          "regexStr": "味方全体の((?!属性|自身)[\\s\\S])*?(\\+)?(最大)?SP(を)?([4-9][0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "DEFアップ": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(4[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-59%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(5[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体60-69%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(6[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体70-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?([7-9][0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体100-199%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?DEF(?:を)?(1\\d\\d%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "SPDアップ": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?(2[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?(3[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?(4[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-59%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?(5[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体60-69%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?(6[0-9]%)アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体70-99%",
+          "regexStr": "味方全体の(?:(?!属性|自身)[\\s\\S])*?(?:\\+)?SPD(?:を)?([7-9][0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "HP回復": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体10-19%",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?(1\\d+%)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?(2\\d+%)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-39%",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?(3\\d+%)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-99%",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?([4-9]\\d+%)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体10-19%継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?(1\\d+%)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体20-29%継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?(2\\d+%)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体30-99%継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?HP(?:を)?([3-9]\\d+%)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "SP回復": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "全体(基礎値)",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(\\d+)(.基礎値.回復|回復.基礎値.)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体20-29%",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(2\\d%)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体10-19",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(1\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体20-39",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([2-3]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-59",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([4-5]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体60-79",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([6-7]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体80-99",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([8-9]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体100-119",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(1[0-1]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体120-199",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(1[2-9]\\d)(.固定値.|.基礎値.)?回復",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体1-9%継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(\\d%)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体10-99%継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([1-9]\\d%)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体10-39継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([1-3]\\d)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体40-49継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?(4\\d)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体50-99継続",
+          "regexStr": "味方全体(?:の|に)?(?:(?!自身|属性)[\\s\\S])*?(\\+)?SP(?:を)?([5-9]\\d)(.固定値.|.基礎値.)?継続回復.(\\dT)?",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "回復その他": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "DEF依存回復",
+          "regexStr": "(HP|SP).(\\d+\\+自身のDEF/\\d+).(%)?(?:回復)(&br;)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被回復効果10-19%",
+          "regexStr": "被回復効果(1\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被回復効果20-29%",
+          "regexStr": "被回復効果(2\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被回復効果30-39%",
+          "regexStr": "被回復効果(3\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被回復効果40-49%",
+          "regexStr": "被回復効果(4\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被回復効果50-99%",
+          "regexStr": "被回復効果([5-9]\\d%)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "消費SPダウン": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "消費SP1-9%ダウン",
+          "regexStr": "消費SP(?:を)?(\\d%)ダウンを付与.(\\dT|永続)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "消費SP10-99%ダウン",
+          "regexStr": "消費SP(?:を)?([1-9]\\d%)ダウンを付与.(\\dT|永続)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "マーカー": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "氷爆",
+          "regexStr": "氷爆",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "鬼ころし",
+          "regexStr": "鬼ころし",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "誓約",
+          "regexStr": "誓約",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "氷壁",
+          "regexStr": "氷壁",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ボルテージ【ATK】",
+          "regexStr": "ボルテージ【ATK】",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "ボルテージ【DEF】",
+          "regexStr": "ボルテージ【DEF】",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ボルテージ【SPD】",
+          "regexStr": "ボルテージ【SPD】",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "凶兆",
+          "regexStr": "凶兆",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "帯電",
+          "regexStr": "帯電",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "不滅",
+          "regexStr": "不滅",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "不滅",
+          "regexStr": "不滅",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "奮起",
+          "regexStr": "奮起",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "轟雷",
+          "regexStr": "轟雷",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "帯電",
+          "regexStr": "帯電",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "バニー",
+          "regexStr": "バニー",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "根性",
+          "regexStr": "根性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "炎魂",
+          "regexStr": "炎魂",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ブーケ",
+          "regexStr": "ブーケ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "対魔粒子",
+          "regexStr": "対魔粒子",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "獄炎",
+          "regexStr": "獄炎",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "不滅",
+          "regexStr": "不滅",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "紅き闇",
+          "regexStr": "紅き闇",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "状態異常": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "付与率アップ",
+          "regexStr": "状態異常付与率(?:を)?(\\d+%)アップ.(永続|\\dT)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "眠り",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:眠り|睡眠)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "麻痺",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:麻痺)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "毒",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:毒)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "火傷",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:火傷)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "呪い",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:呪い)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "封印",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:封印)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "暗闇",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:暗闇)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "混乱",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:混乱)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "石化",
+          "regexStr": "(?:(威力:\\d+%.\\d+.|N%|n%)?(?:で)?(?:攻撃)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?(?:(?!威力:)[\\s\\S])*)?(?:石化)状態(\\(\\d回抽選\\))?を状態異常値(\\d+%)で与える\\((\\dT)\\)(?:&br;)?(\\+威力:\\d+%.\\d+.|N%|n%)?(?:で)?((?:×|x)\\d+回)?(DEFを(?:\\d+%)?無視して)?(?:攻撃)?[\\s\\S]*?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "氷結",
+          "regexStr": "氷結(?:特殊効果)?(?:を)?付与(?:する)?.(永続|\\dT)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "防御": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "シールド実数",
+          "regexStr": "(\\d+)の耐久値をもつシールド(?:を)?付与.(\\dT|永続)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "シールド10-19%",
+          "regexStr": "(1\\d+%)の耐久値をもつシールド(?:を)?付与.(\\dT|永続)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "シールド20-29%",
+          "regexStr": "(2\\d+%)の耐久値をもつシールド(?:を)?付与.(\\dT|永続)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "シールド30-39%",
+          "regexStr": "(3\\d+%)の耐久値をもつシールド(?:を)?付与.(\\dT|永続)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメージカット10-19%",
+          "regexStr": "ダメージを(1\\d%)カットする.\\dT.",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメージカット20-29%",
+          "regexStr": "ダメージを(2\\d%)カットする.\\dT.",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメージカット30-39%",
+          "regexStr": "ダメージを(3\\d%)カットする.\\dT.",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ダメージカット40-49%",
+          "regexStr": "ダメージを(4\\d%)カットする.\\dT.",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "敵に付与": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "受けるダメージ1-9%増加",
+          "regexStr": "受けるダメージ(?:が)?(\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "受けるダメージ10-19%増加",
+          "regexStr": "受けるダメージ(?:が)?(1\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "受けるダメージ20-29%増加",
+          "regexStr": "受けるダメージ(?:が)?(2\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "受けるダメージ30-39%増加",
+          "regexStr": "受けるダメージ(?:が)?(3\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全バフ解除",
+          "regexStr": "敵(\\d体|全体)(?:(?!自身|味方|属性|\\|).)*?(?:の|に)(全て|すべて)?(?:の)?バフを(全て|すべて)?解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ATKバフ解除",
+          "regexStr": "敵(\\d体|全体)(?:(?!自身|味方|属性|\\|).)*?(?:の|に)ATK(?:の)?バフを(全て|すべて)?解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEFバフ解除",
+          "regexStr": "敵(\\d体|全体)(?:(?!自身|味方|属性|\\|).)*?(?:の|に)DEF(?:の)?バフを(全て|すべて)?解除",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "状態異常耐性値ダウン",
+          "regexStr": "状態異常耐性値(?:を)?(\\d+%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "会心耐性ダウン",
+          "regexStr": "会心耐性(?:を)?(\\d+%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "ATKダウン",
+          "regexStr": "ATK(?:を)?(\\d+%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF10-19%ダウン",
+          "regexStr": "DEF(?:を)?(1\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF20-29%ダウン",
+          "regexStr": "DEF(?:を)?(2\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF30-39%ダウン",
+          "regexStr": "DEF(?:を)?(3\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF40-49%ダウン",
+          "regexStr": "DEF(?:を)?(4\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF50-59%ダウン",
+          "regexStr": "DEF(?:を)?(5\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF60-99%ダウン",
+          "regexStr": "DEF(?:を)?([6-9]\\d%)ダウン",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SPDダウン",
+          "regexStr": "SPD(?:を)?(\\d+%)ダウン",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "攻撃": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "敵全体10-199%",
+          "regexStr": "敵全体(に|　)(小|中|大|特大)?威力:(1?\\d\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "敵全体200-399%",
+          "regexStr": "敵全体(に|　)(小|中|大|特大)?威力:([2-3]\\d\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "敵全体400-599%",
+          "regexStr": "敵全体(に|　)(小|中|大|特大)?威力:([4-5]\\d\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "敵全体600-799%",
+          "regexStr": "敵全体(に|　)(小|中|大|特大)?威力:([6-7]\\d\\d%)",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被り有りランダムN%",
+          "regexStr": "被り有りランダム(?:　| )?威力:(N%)(?:で)?(?:攻撃)?(?:×|x)?(\\d+回)(?:攻撃)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被り有りランダム10-99%",
+          "regexStr": "被り有りランダム(?:　| )?威力:(\\d\\d%.\\d+.)(?:で)?(?:攻撃)?(?:×|x)?(\\d+回)(?:攻撃)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被り有りランダム100-299%",
+          "regexStr": "被り有りランダム(?:　| )?威力:([1-2]\\d\\d%.\\d+.)(?:で)?(?:攻撃)?(?:×|x)?(\\d+回)(?:攻撃)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被り有りランダム300-499%",
+          "regexStr": "被り有りランダム(?:　| )?威力:([3-4]\\d\\d%.\\d+.)(?:で)?(?:攻撃)?(?:×|x)?(\\d+回)(?:攻撃)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "被り有りランダム500-699%",
+          "regexStr": "被り有りランダム(?:　| )?威力:([5-6]\\d\\d%.\\d+.)(?:で)?(?:攻撃)?(?:×|x)?(\\d+回)(?:攻撃)?",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "DEF依存",
+          "regexStr": "〔自身の現在DEF(?:の値)?.([0-9.]+)〕%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SPD依存",
+          "regexStr": "〔自身の現在SPD(?:の値)?.([0-9.]+)〕%",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "SP全消費攻撃",
+          "regexStr": "(.消費SP/スキルSP/[0-9\\.]+.\\^[0-9\\.]+\\*[0-9\\.]+\\+[0-9\\.]+)",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "簡易検索": {
+      "columnsStr": "12-16",
+      "logic": "AND",
+      "buttons": [
+        {
+          "buttonName": "全体HP",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?最大HPを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体SP",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?最大SPを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体ATK",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?ATKを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体DEF",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?DEFを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体SPD",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?SPDを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体会心率",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?会心率を?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体会心ダメージ",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?会心ダメージを?\\d+%アップ",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "全体スキル威力",
+          "regexStr": "味方全体(?:(?!自身|属性)[\\s\\S])*?スキル威力を?\\d+%アップ",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "仮置き": {
+      "columnsStr": "12-16",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "モードチェンジ",
+          "regexStr": "モードチェンジ",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "対魔忍特性バフ",
+          "regexStr": "対魔忍特性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "陰陽師特性バフ",
+          "regexStr": "陰陽師特性",
+          "exceptStr": ""
+        },
+        {
+          "buttonName": "米連特性バフ",
+          "regexStr": "米連特性",
+          "exceptStr": ""
+        },
+
+        {
+          "buttonName": "複数ステータスアップ",
+          "regexStr": "(属性|全体|自身)(?:の)(最大HP|最大SP|HP|SP|ATK|DEF|SPD)(と)(最大HP|最大SP|HP|SP|ATK|DEF|SPD)?(と)?(最大HP|最大SP|HP|SP|ATK|DEF|SPD)?(?:を)?(\\d+%|\\d+)(?:.1人.(～|〜)(\\d+%|\\d+).上限:[1-5]人.%)?(?:アップ).([1-9]T).",
+          "exceptStr": ""
+        }
+      ]
+    },
+    "テンプレ": {
+      "columnsStr": "0",
+      "logic": "OR",
+      "buttons": [
+        {
+          "buttonName": "test",
+          "regexStr": "スキル威力(?:を)?(4[0-9]%)アップ",
+          "exceptStr": ""
+        }
+      ]
+    }
+  },
+  "globalLogic": "AND",
+  "stickyEnabled": true,
+  "minimized": false
+}
